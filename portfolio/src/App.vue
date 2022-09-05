@@ -32,16 +32,19 @@ export default {
 .mobileBoxWidth {
   @apply px-5;
 }
+.article-text {
+  @apply text-xs leading-relaxed;
+}
 .scroll-tool {
-  @apply w-full hover:animate-pulse;
+  @apply w-full hover:animate-pulse  text-MediumGrey;
 }
 .scroll-arrow {
   @apply absolute
           w-10
-          h-28
+          h-24
           mx-auto
           inset-x-0
-          bottom-8
+          bottom-4
           animate-bounce;
 }
 .scroll-circle {
@@ -50,10 +53,28 @@ export default {
           absolute
           mx-auto
           inset-x-0
-          bottom-6
+          bottom-3
           hover:opacity-30;
 }
 .scroll-click {
-  @apply absolute inset-x-0 bottom-2 text-xs;
+  @apply absolute inset-x-0 bottom-1 text-xs text-center;
+}
+.title {
+  @apply text-3xl uppercase relative mt-24;
+}
+.title-text {
+  @apply border-b border-EggYellow w-36 text-center pr-2 relative;
+}
+.title-point {
+  @apply w-1.5 h-1.5 rounded-full bg-EggYellow absolute right-0 -bottom-1;
+}
+.subtitle {
+  @apply text-xl capitalize pt-32 flex flex-row;
+}
+.subtitle-text {
+  @apply tracking-wider;
+}
+.subtitle-point {
+  @apply w-2 h-2 rounded-full bg-EggYellow self-center mx-3;
 }
 </style>

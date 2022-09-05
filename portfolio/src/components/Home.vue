@@ -1,19 +1,19 @@
 <template>
-  <div class="home mobileBoxWidth bg-Blackish flex flex-col">
+  <div id="home" class="home mobileBoxWidth">
     <div class="text-xl">
       <div>Hi! I'm Lin.</div>
       <div class="mt-4">こんにちは。リンと申します。</div>
     </div>
-    <div class="mt-36 text-xs leading-relaxed">
-      <div>
+    <div class="mt-36">
+      <div class="article-text">
         I'm from Taiwan, and I live in Japan now. <br />I've been learning
         coding by myself for about 2 years.
       </div>
-      <div class="mt-4">
+      <div class="mt-4 article-text">
         台湾出身東京在住、<br />2年前からプログラミング言語を自学始めました。
       </div>
     </div>
-    <div class="scroll-tool text-MediumGrey">
+    <a href="#about" class="scroll-tool">
       <img class="scroll-arrow" src="../assets/scroll-arrow.png" alt="arrow" />
       <svg height="100" width="100" class="scroll-circle">
         <circle
@@ -27,7 +27,7 @@
       </svg>
 
       <div class="scroll-click">click</div>
-    </div>
+    </a>
   </div>
   <!-- <div></div> -->
 </template>
@@ -40,6 +40,6 @@ export default {
 
 <style scoped>
 .home {
-  @apply h-screen text-white justify-center text-center;
+  @apply h-screen text-white justify-center text-center bg-Blackish flex flex-col;
 }
 </style>

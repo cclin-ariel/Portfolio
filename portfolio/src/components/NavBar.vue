@@ -1,29 +1,17 @@
 <template>
-  <div class="navBar mobileBoxWidth bg-Blackish">
-    <div class="flex text-white justify-end h-14 items-center">
-      <button
-        :class="{ 'text-EggYellow': isHome }"
-        class="navItem hover:text-EggYellow"
-      >
-        <a href=".home">home</a>
+  <div class="navBar mobileBoxWidth">
+    <div class="navItems">
+      <button :class="{ 'text-EggYellow': isHome }" class="navItem">
+        <a href="#home">home</a>
       </button>
-      <button
-        :class="{ 'text-EggYellow': isAbout }"
-        class="navItem hover:text-EggYellow"
-      >
-        <a href=".about">about</a>
+      <button :class="{ 'text-EggYellow': isAbout }" class="navItem">
+        <a href="#about">about</a>
       </button>
-      <button
-        :class="{ 'text-EggYellow': isWork }"
-        class="navItem hover:text-EggYellow"
-      >
-        <a href=".work">work</a>
+      <button :class="{ 'text-EggYellow': isWork }" class="navItem">
+        <a href="#work">work</a>
       </button>
-      <button
-        :class="{ 'text-EggYellow': isContact }"
-        class="navItem hover:text-EggYellow"
-      >
-        <a href=".contact">contact</a>
+      <button :class="{ 'text-EggYellow': isContact }" class="navItem">
+        <a href="#contact">contact</a>
       </button>
     </div>
   </div>
@@ -43,11 +31,14 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .navBar {
-  @apply fixed w-full;
+  @apply bg-Blackish w-full fixed z-50 text-white shadow-md;
+}
+.navItems {
+  @apply flex justify-end items-center h-14;
 }
 .navItem {
-  @apply px-1.5 text-sm capitalize;
+  @apply px-1.5 text-sm capitalize hover:text-EggYellow;
 }
 </style>
