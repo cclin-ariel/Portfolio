@@ -60,8 +60,9 @@ export default {
   @apply absolute inset-x-0 bottom-1 text-xs text-center;
 }
 .title {
-  @apply text-3xl uppercase relative mt-24;
+  @apply text-3xl uppercase relative pt-24;
 }
+
 .title-text {
   @apply border-b border-EggYellow w-36 text-center pr-2 relative;
 }

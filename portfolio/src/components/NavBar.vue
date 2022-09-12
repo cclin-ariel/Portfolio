@@ -8,7 +8,7 @@
         <a href="#about">about</a>
       </button>
       <button :class="{ 'text-EggYellow': isWork }" class="navItem">
-        <a href="#work">work</a>
+        <a href="#work1">work</a>
       </button>
       <button :class="{ 'text-EggYellow': isContact }" class="navItem">
         <a href="#contact">contact</a>
@@ -33,7 +33,7 @@ export default {
 
 <style scoped>
 .navBar {
-  @apply bg-Blackish w-full fixed z-50 text-white shadow-md;
+  @apply bg-Blackish w-full sticky top-0 z-50 text-white shadow-md;
 }
 .navItems {
   @apply flex justify-end items-center h-14;

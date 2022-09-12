@@ -252,17 +252,12 @@
         <p>Ukulele</p>
         <p>Sims4</p>
       </div>
-      <div class="relative mt-5">
+      <div class="mt-5 -mr-5">
         <img
           src="../assets/Sims4-1.png"
           alt="Sims4 "
-          class="w-6-12 absolute rounded shadow-lg mx-3 -right-10"
+          class="w-10/12 shadow-lg float-right"
         />
-        <!-- <img
-          src="../assets/Sims4-2.png"
-          alt="Sims4 "
-          class="w-6/12 absolute rounded shadow-lg right-0 mt-10 mx-3"
-        /> -->
       </div>
     </div>
     <!-- subtitle Language -->
@@ -279,7 +274,7 @@
       </div>
     </div>
 
-    <a href="#works" class="scroll-tool">
+    <a href="#work1" class="scroll-tool">
       <img class="scroll-arrow" src="../assets/scroll-arrow.png" alt="arrow" />
       <svg height="100" width="100" class="scroll-circle">
         <circle

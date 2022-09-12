@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer utilities {
-  .text-white: {
-    color: #ffffff;
+@layer utilities {
+  .w-full-5px: {
+    width: calc(100%-5px);
   }
-} */
+}
