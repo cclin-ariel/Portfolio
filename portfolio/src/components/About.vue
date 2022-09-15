@@ -7,19 +7,21 @@
         <div class="title-point"></div>
       </div>
     </div>
-    <!-- PR pic -->
-    <div>
-      <img src="../assets/Lin.jpg" alt="Lin" class="PR-pic" />
-    </div>
-    <!-- PR -->
-    <div class="article-text PR-text">
+    <div class="PR-section">
+      <!-- PR pic -->
       <div>
-        I like working alone, but also like to be a team player. <br />
-        I like to create something from nothing.
+        <img src="../assets/Lin.jpg" alt="Lin" class="PR-pic" />
       </div>
-      <div class="mt-2">
-        チームワークが好きですが、ゼロから独り作業も好きです。<br />
-        ?フロントエンドとデザインをまとめてできるのが強みです。
+      <!-- PR -->
+      <div class="article-text PR-text">
+        <div>
+          I like working alone, but also like to be a team player. <br />
+          I like to create something from nothing.
+        </div>
+        <div class="mt-2">
+          チームワークが好きですが、ゼロから独り作業も好きです。<br />
+          ?フロントエンドとデザインをまとめてできるのが強みです。
+        </div>
       </div>
     </div>
     <!-- PR scroll -->
@@ -94,14 +96,13 @@
       <div class="subtitle-point"></div>
       <div class="subtitle-text">Education & Experience</div>
     </div>
+    <!-- taiwan map -->
+    <div class="map">
+      <img src="../assets/tw.svg" alt="Taiwan map" class="map-TW sm:w-8/12" />
+    </div>
 
+    <!-- list of tw experience -->
     <div class="section mt-14">
-      <!-- taiwan map -->
-      <div>
-        <img src="../assets/tw.svg" alt="Taiwan map" class="map-TW" />
-      </div>
-
-      <!-- list of tw experience -->
       <div class="section-item border-l">
         <div class="section-dot"></div>
         <div class="section-text">
@@ -172,13 +173,13 @@
       </div>
     </div>
 
-    <div class="section mt-20">
-      <!-- Japan map -->
-      <div>
-        <img src="../assets/japan.svg" alt="Japan map" class="map-JP" />
-      </div>
+    <!-- Japan map -->
+    <div class="map">
+      <img src="../assets/japan.svg" alt="Japan map" class="map-JP" />
+    </div>
 
-      <!-- list of Japan experience -->
+    <!-- list of Japan experience -->
+    <div class="section mt-20">
       <div class="section-item border-l">
         <div class="section-dot"></div>
         <div class="section-text">
@@ -230,39 +231,45 @@
       <div class="scroll-click">click</div>
     </a>
   </div>
-  <div id="hobby-language" class="hobby-language mobileBoxWidth">
+  <div
+    id="hobby-language"
+    class="hobby-language mobileBoxWidth flex flex-col justify-between"
+  >
     <!-- subtitle hobby -->
     <div class="hobby">
       <div class="subtitle">
         <div class="subtitle-point"></div>
         <div class="subtitle-text whitespace-nowrap">Hobby</div>
       </div>
-      <div
-        class="
-          hobby-text
-          flex
-          justify-around
-          text-Blackish
-          mt-5
-          mx-auto
-          w-10/12
-        "
-      >
-        <p>Camping</p>
-        <p>Ukulele</p>
-        <p>Sims4</p>
-      </div>
-      <div class="mt-5 -mr-5">
-        <img
-          src="../assets/Sims4-1.png"
-          alt="Sims4 "
-          class="w-10/12 shadow-lg float-right"
-        />
+      <div class="sm:flex sm:flex-row mt-5">
+        <div
+          class="
+            hobby-text
+            flex
+            justify-around
+            text-Blackish
+            mt-5
+            mx-auto
+            w-10/12
+            sm:flex-col sm:text-right
+          "
+        >
+          <p>Camping</p>
+          <p>Ukulele</p>
+          <p>Sims4</p>
+        </div>
+        <div class="mt-5 -mr-5">
+          <img
+            src="../assets/Sims4-1.png"
+            alt="Sims4 "
+            class="w-10/12 shadow-lg float-right"
+          />
+        </div>
       </div>
     </div>
     <!-- subtitle Language -->
-    <div class="language pt-24">
-      <div class="subtitle">
+    <div class="language pb-20">
+      <div class="subtitle pt-0 pt-5">
         <div class="subtitle-point"></div>
         <div class="subtitle-text whitespace-nowrap">Language</div>
       </div>
@@ -301,11 +308,14 @@ export default {
 .about-PR {
   @apply h-screen text-Blackish bg-white flex flex-col relative;
 }
+.PR-section {
+  @apply flex flex-col  sm:flex-row;
+}
 .PR-pic {
-  @apply max-w-sm w-7/12 mt-10 shadow-lg rounded;
+  @apply max-w-xs w-7/12 sm:w-11/12 mt-10 shadow-lg rounded;
 }
 .PR-text {
-  @apply mt-5 text-right;
+  @apply mt-5 text-right sm:self-end;
 }
 .skill {
   @apply bg-MediumGrey text-white tracking-wider h-screen relative;
@@ -314,7 +324,7 @@ export default {
   @apply flex flex-wrap mt-10 justify-center;
 }
 .skill-ring {
-  @apply w-36 h-36 rounded-full bg-EggYellow shadow-lg m-2.5 flex justify-center items-center;
+  @apply w-36 h-36 rounded-full bg-EggYellow shadow-lg m-2.5 sm:mx-10 flex justify-center items-center;
 }
 .ring-text {
   @apply h-5/6 flex flex-col items-center justify-evenly text-sm;
@@ -342,11 +352,18 @@ export default {
 .section-subtitle {
   @apply whitespace-nowrap text-xs hover:text-MediumGrey pt-6 pb-10 mb-2;
 }
+#experience-TW,
+#experience-JP {
+  @apply relative;
+}
+.map {
+  @apply absolute w-10/12 sm:flex sm:items-center sm:justify-end opacity-10;
+}
 .map-TW {
-  @apply opacity-10 absolute -top-14 -left-5;
+  @apply sm:w-8/12 -mt-12 -ml-5 sm:ml-0 sm:-mt-20;
 }
 .map-JP {
-  @apply opacity-10 absolute top-2 -left-5;
+  @apply sm:w-9/12;
 }
 .language-text {
   @apply flex justify-around text-Blackish mt-5 flex-wrap w-10/12 h-20 mx-auto;
