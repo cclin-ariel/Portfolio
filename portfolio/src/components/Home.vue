@@ -40,6 +40,6 @@ export default {
 
 <style scoped>
 .home {
-  @apply h-screen text-white justify-center text-center bg-Blackish flex flex-col;
+  @apply h-screen text-white justify-center text-center bg-Blackish flex flex-col relative;
 }
 </style>

@@ -7,15 +7,27 @@
       </div>
     </div>
     <div class="social-media">
-      <button class="w-6 h-6 bg-white rounded-full border-2 border-white">
+      <a
+        href="https://twitter.com/wahaha47168"
+        target="_blank"
+        class="w-6 h-6 bg-white rounded-full border-2 border-white"
+      >
         <img src="../assets/twitter.svg" alt="social media icon" />
-      </button>
-      <button class="w-10 h-10 bg-white">
+      </a>
+      <a
+        href="https://github.com/cclin-ariel"
+        target="_blank"
+        class="w-10 h-10 bg-white"
+      >
         <img src="../assets/github.svg" alt="social media icon" />
-      </button>
-      <button class="w-6 h-6 bg-white rounded-full border border-white">
+      </a>
+      <a
+        href="mailto:wahaha47168@gmai1.com"
+        target="_blank"
+        class="w-6 h-6 bg-white rounded-full border border-white"
+      >
         <img src="../assets/mail.png" alt="social media icon" />
-      </button>
+      </a>
     </div>
   </div>
 </template>

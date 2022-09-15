@@ -22,7 +22,7 @@ export default {
   name: "NavBar",
   data() {
     return {
-      isHome: true,
+      isHome: false,
       isAbout: false,
       isWork: false,
       isContact: false,
@@ -33,7 +33,7 @@ export default {
 
 <style scoped>
 .navBar {
-  @apply bg-Blackish w-full sticky top-0 z-50 text-white shadow-md;
+  @apply bg-Blackish w-full top-0 z-40 text-white fixed shadow-md;
 }
 .navItems {
   @apply flex justify-end items-center h-14;

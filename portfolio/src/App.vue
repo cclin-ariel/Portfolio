@@ -1,6 +1,7 @@
 <template>
+  <Loading />
   <NavBar />
-  <Home msg="Welcome to Lin's Page" />
+  <Home />
   <About />
   <Work />
   <Contact />
@@ -8,6 +9,7 @@
 </template>
 
 <script>
+import Loading from "./components/Loading.vue";
 import Home from "./components/Home.vue";
 import NavBar from "./components/NavBar.vue";
 import About from "./components/About.vue";
@@ -18,6 +20,7 @@ import CopyRight from "./components/CopyRight.vue";
 export default {
   name: "App",
   components: {
+    Loading,
     Home,
     NavBar,
     About,
@@ -36,8 +39,9 @@ export default {
   @apply text-xs leading-relaxed;
 }
 .scroll-tool {
-  @apply w-full hover:animate-pulse  text-MediumGrey;
+  @apply w-full hover:animate-pulse;
 }
+
 .scroll-arrow {
   @apply absolute
           w-10
@@ -57,7 +61,11 @@ export default {
           hover:opacity-30;
 }
 .scroll-click {
-  @apply absolute inset-x-0 bottom-1 text-xs text-center;
+  @apply absolute inset-x-0 bottom-1 text-xs text-center text-MediumGrey;
+}
+#skill .scroll-click,
+.work .scroll-click {
+  @apply text-DarkGrey;
 }
 .title {
   @apply text-3xl uppercase relative pt-24;

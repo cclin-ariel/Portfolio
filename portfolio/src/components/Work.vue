@@ -59,7 +59,7 @@
   <div id="work2" class="work mobileBoxWidth">
     <div class="work-item w-full-5px -mr-5">
       <img
-        src="../assets/work/sims-home_DT.png"
+        src="../assets/work/localhost_8082_.png"
         class="desktop-photo float-right"
         alt="work photo2"
       />

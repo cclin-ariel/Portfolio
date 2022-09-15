@@ -6,4 +6,12 @@
   .w-full-5px: {
     width: calc(100%-5px);
   }
+  .bg-gradient {
+    background: rgb(255, 223, 108);
+    background: linear-gradient(
+      56deg,
+      rgba(255, 223, 108, 1) 61%,
+      rgba(255, 255, 255, 1) 100%
+    );
+  }
 }
