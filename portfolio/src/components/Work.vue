@@ -8,19 +8,21 @@
     </div>
     <!-- work 1 -->
     <div class="work-item w-full-5px">
-      <img
-        src="../assets/work/sims-home_DT.png"
-        class="desktop-photo"
-        alt="work photo1"
-      />
-      <!-- mobile -->
-      <div class="mobile">
+      <div class="work-photo">
         <img
-          src="../assets/work/sims-home_mobile.png"
-          class="mobile-photo"
+          src="../assets/work/sims-home_DT.png"
+          class="desktop-photo"
           alt="work photo1"
         />
-        <div class="mobile-btn"></div>
+        <!-- mobile -->
+        <div class="mobile min-w-100px">
+          <img
+            src="../assets/work/sims-home_mobile.png"
+            class="mobile-photo"
+            alt="work photo1"
+          />
+          <div class="mobile-btn"></div>
+        </div>
       </div>
       <!-- work description -->
       <div class="workItem-description">
@@ -58,19 +60,21 @@
   <!-- work 2 -->
   <div id="work2" class="work mobileBoxWidth">
     <div class="work-item w-full-5px -mr-5">
-      <img
-        src="../assets/work/localhost_8082_.png"
-        class="desktop-photo float-right"
-        alt="work photo2"
-      />
-      <!-- mobile -->
-      <div class="mobile">
+      <div class="work-photo">
         <img
-          src="../assets/work/resto_mobile.png"
-          class="mobile-photo"
+          src="../assets/work/localhost_8082_.png"
+          class="desktop-photo float-right"
           alt="work photo2"
         />
-        <div class="mobile-btn"></div>
+        <!-- mobile -->
+        <div class="mobile min-w-100px">
+          <img
+            src="../assets/work/resto_mobile.png"
+            class="mobile-photo"
+            alt="work photo2"
+          />
+          <div class="mobile-btn"></div>
+        </div>
       </div>
       <!-- work description -->
       <div class="workItem-description">
@@ -108,19 +112,21 @@
   <!-- work 3  -->
   <div id="work3" class="work mobileBoxWidth">
     <div class="work-item w-full-5px">
-      <img
-        src="../assets/work/FindMyBus_DT.png"
-        class="desktop-photo"
-        alt="work photo3"
-      />
-      <!-- mobile -->
-      <div class="mobile">
+      <div class="work-photo">
         <img
-          src="../assets/work/FindMyBus_mobile.png"
-          class="mobile-photo"
+          src="../assets/work/FindMyBus_DT.png"
+          class="desktop-photo"
           alt="work photo3"
         />
-        <div class="mobile-btn"></div>
+        <!-- mobile -->
+        <div class="mobile min-w-100px mb-28">
+          <img
+            src="../assets/work/FindMyBus_mobile.png"
+            class="mobile-photo"
+            alt="work photo3"
+          />
+          <div class="mobile-btn"></div>
+        </div>
       </div>
       <!-- work description -->
       <div class="workItem-description">
@@ -176,32 +182,41 @@ export default {
 #work3 .work-item {
   @apply mt-20 -left-5;
 }
+.work-photo {
+  @apply flex flex-row relative;
+}
+#work2 .work-photo {
+  @apply flex flex-row-reverse relative;
+}
 .desktop-photo {
   @apply w-11/12 shadow-lg transform hover:scale-105 ease-in-out duration-300;
 }
 #work1 .desktop-photo {
-  @apply -ml-5;
+  @apply -ml-5 sm:w-8/12;
 }
-#wok2 .desktop-photo {
-  @apply -mr-5;
+#work2 .desktop-photo {
+  @apply -mr-5 sm:w-9/12;
 }
 #work3 .desktop-photo {
-  @apply w-9/12 -ml-5;
+  @apply w-9/12 -ml-5 sm:w-6/12;
 }
 .mobile {
-  @apply hidden sm:block absolute right-0 w-2/12 rounded-xl float-right shadow-lg bg-EggYellow pt-1 px-1 flex flex-col justify-center items-center;
+  @apply hidden sm:block h-full w-2/12 rounded-xl shadow-lg bg-white pt-1 px-1 flex flex-col justify-center items-center border-MediumGrey border mx-8 self-end;
 }
 .mobile-photo {
-  @apply rounded-lg m-auto border-DarkGrey border;
+  @apply rounded-lg m-auto border-MediumGrey border;
 }
 .mobile-btn {
-  @apply w-1/12 rounded-full border-DarkGrey border bg-white m-0.5;
+  @apply w-2 h-2 rounded-full bg-white m-1 ring-2 ring-MediumGrey mx-auto;
 }
 .workItem-description {
   @apply float-right mt-12 pr-5;
 }
 #work2 .workItem-description {
   @apply float-left ml-5;
+}
+#work3 .workItem-description {
+  @apply sm:-mt-20;
 }
 .work-title-text {
   @apply bg-MediumGrey;

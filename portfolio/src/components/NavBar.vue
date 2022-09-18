@@ -33,7 +33,7 @@ export default {
 
 <style scoped>
 .navBar {
-  @apply bg-Blackish w-full top-0 z-40 text-white fixed shadow-md;
+  @apply bg-Blackish w-screen top-0 z-40 text-white fixed shadow-md;
 }
 .navItems {
   @apply flex justify-end items-center h-14;
