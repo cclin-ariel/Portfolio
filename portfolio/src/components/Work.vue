@@ -1,165 +1,209 @@
 <template>
-  <div id="work1" class="work mobileBoxWidth">
-    <div class="title">
-      <div class="title-text">
-        work
-        <div class="title-point"></div>
+  <div id="work">
+    <div
+      id="work1"
+      class="work mobileBoxWidth xl:flex xl:flex-col xl:justify-center"
+    >
+      <div class="title">
+        <div class="title-text">
+          work
+          <div class="title-point"></div>
+        </div>
       </div>
-    </div>
-    <!-- work 1 -->
-    <div class="work-item w-full-5px">
-      <div class="work-photo">
-        <img
-          src="../assets/work/sims-home_DT.png"
-          class="desktop-photo"
-          alt="work photo1"
-        />
-        <!-- mobile -->
-        <div class="mobile min-w-100px">
+      <!-- work 1 -->
+      <div class="work-item w-full-5px">
+        <div class="work-photo">
           <img
-            src="../assets/work/sims-home_mobile.png"
-            class="mobile-photo"
+            src="../assets/work/sims-home_DT.png"
+            class="desktop-photo"
             alt="work photo1"
           />
-          <div class="mobile-btn"></div>
+          <!-- mobile -->
+          <div class="mobile min-w-100px">
+            <img
+              src="../assets/work/sims-home_mobile.png"
+              class="mobile-photo"
+              alt="work photo1"
+            />
+            <div class="mobile-btn"></div>
+          </div>
+        </div>
+        <!-- work description -->
+        <div class="workItem-description">
+          <div class="text-xl">
+            Sims-Home
+            <span
+              class="
+                text-xs
+                -mt-1
+                capitalize
+                tracking-tight
+                font-extralight
+                pl-2
+              "
+            >
+              E-commerce website
+            </span>
+          </div>
+          <div class="work-tool">
+            <div>Vue.js / Vue CLI / Vue Router / TailwindCSS</div>
+            <div class="point"></div>
+            <div class="circle"></div>
+          </div>
         </div>
       </div>
-      <!-- work description -->
-      <div class="workItem-description">
-        <div class="text-xl">
-          Sims-Home
-          <span
-            class="text-xs -mt-1 capitalize tracking-tight font-extralight pl-2"
-          >
-            E-commerce website
-          </span>
-        </div>
-        <div class="work-tool">
-          <div>Vue.js / Vue CLI / Vue Router / TailwindCSS</div>
-          <div class="point"></div>
-          <div class="circle"></div>
-        </div>
-      </div>
-    </div>
 
-    <a href="#work2" class="scroll-tool">
-      <img class="scroll-arrow" src="../assets/scroll-arrow.png" alt="arrow" />
-      <svg height="100" width="100" class="scroll-circle">
-        <circle
-          cx="40"
-          cy="40"
-          r="30"
-          stroke="#FFDF6C"
-          stroke-width="1"
-          fill="none"
-        />
-      </svg>
-      <div class="scroll-click">click</div>
-    </a>
-  </div>
-  <!-- work 2 -->
-  <div id="work2" class="work mobileBoxWidth">
-    <div class="work-item w-full-5px -mr-5">
-      <div class="work-photo">
+      <a href="#work2" class="scroll-tool">
         <img
-          src="../assets/work/localhost_8082_.png"
-          class="desktop-photo float-right"
-          alt="work photo2"
+          class="scroll-arrow"
+          src="../assets/scroll-arrow.png"
+          alt="arrow"
         />
-        <!-- mobile -->
-        <div class="mobile min-w-100px">
+        <svg height="100" width="100" class="scroll-circle">
+          <circle
+            cx="40"
+            cy="40"
+            r="30"
+            stroke="#FFDF6C"
+            stroke-width="1"
+            fill="none"
+          />
+        </svg>
+        <div class="scroll-click">click</div>
+      </a>
+    </div>
+    <!-- work 2 -->
+    <div
+      id="work2"
+      class="work mobileBoxWidth xl:flex xl:flex-col xl:justify-center"
+    >
+      <div class="work-item w-full-5px -mr-5">
+        <div class="work-photo">
           <img
-            src="../assets/work/resto_mobile.png"
-            class="mobile-photo"
+            src="../assets/work/localhost_8082_.png"
+            class="desktop-photo float-right"
             alt="work photo2"
           />
-          <div class="mobile-btn"></div>
+          <!-- mobile -->
+          <div class="mobile min-w-100px">
+            <img
+              src="../assets/work/resto_mobile.png"
+              class="mobile-photo"
+              alt="work photo2"
+            />
+            <div class="mobile-btn"></div>
+          </div>
+        </div>
+        <!-- work description -->
+        <div class="workItem-description">
+          <div class="text-xl">
+            Restaurant App
+            <span
+              class="
+                text-xs
+                -mt-1
+                capitalize
+                tracking-tight
+                font-extralight
+                pl-2
+              "
+            >
+              sign / login in function
+            </span>
+          </div>
+          <div class="work-tool">
+            <div>Vue.js / Vue Router / TailwindCSS / JSON sever</div>
+            <div class="point"></div>
+            <div class="circle"></div>
+          </div>
         </div>
       </div>
-      <!-- work description -->
-      <div class="workItem-description">
-        <div class="text-xl">
-          Restaurant App
-          <span
-            class="text-xs -mt-1 capitalize tracking-tight font-extralight pl-2"
-          >
-            sign / login in function
-          </span>
-        </div>
-        <div class="work-tool">
-          <div>Vue.js / Vue Router / TailwindCSS / JSON sever</div>
-          <div class="point"></div>
-          <div class="circle"></div>
-        </div>
-      </div>
-    </div>
 
-    <a href="#work3" class="scroll-tool">
-      <img class="scroll-arrow" src="../assets/scroll-arrow.png" alt="arrow" />
-      <svg height="100" width="100" class="scroll-circle">
-        <circle
-          cx="40"
-          cy="40"
-          r="30"
-          stroke="#FFDF6C"
-          stroke-width="1"
-          fill="none"
-        />
-      </svg>
-      <div class="scroll-click">click</div>
-    </a>
-  </div>
-  <!-- work 3  -->
-  <div id="work3" class="work mobileBoxWidth">
-    <div class="work-item w-full-5px">
-      <div class="work-photo">
+      <a href="#work3" class="scroll-tool">
         <img
-          src="../assets/work/FindMyBus_DT.png"
-          class="desktop-photo"
-          alt="work photo3"
+          class="scroll-arrow"
+          src="../assets/scroll-arrow.png"
+          alt="arrow"
         />
-        <!-- mobile -->
-        <div class="mobile min-w-100px mb-28">
+        <svg height="100" width="100" class="scroll-circle">
+          <circle
+            cx="40"
+            cy="40"
+            r="30"
+            stroke="#FFDF6C"
+            stroke-width="1"
+            fill="none"
+          />
+        </svg>
+        <div class="scroll-click">click</div>
+      </a>
+    </div>
+    <!-- work 3  -->
+    <div
+      id="work3"
+      class="work mobileBoxWidth xl:flex xl:flex-col xl:justify-center"
+    >
+      <div class="work-item w-full-5px">
+        <div class="work-photo">
           <img
-            src="../assets/work/FindMyBus_mobile.png"
-            class="mobile-photo"
+            src="../assets/work/FindMyBus_DT.png"
+            class="desktop-photo"
             alt="work photo3"
           />
-          <div class="mobile-btn"></div>
+          <!-- mobile -->
+          <div class="mobile min-w-100px mb-28">
+            <img
+              src="../assets/work/FindMyBus_mobile.png"
+              class="mobile-photo"
+              alt="work photo3"
+            />
+            <div class="mobile-btn"></div>
+          </div>
+        </div>
+        <!-- work description -->
+        <div class="workItem-description">
+          <div class="text-xl">
+            Find my bus
+            <span
+              class="
+                text-xs
+                -mt-1
+                capitalize
+                tracking-tight
+                font-extralight
+                pl-2
+              "
+            >
+              check bus schedule
+            </span>
+          </div>
+          <div class="work-tool">
+            <div>Vue.js / Vue CLI / Vue Router / Bootstrap</div>
+            <div class="point"></div>
+            <div class="circle"></div>
+          </div>
         </div>
       </div>
-      <!-- work description -->
-      <div class="workItem-description">
-        <div class="text-xl">
-          Find my bus
-          <span
-            class="text-xs -mt-1 capitalize tracking-tight font-extralight pl-2"
-          >
-            check bus schedule
-          </span>
-        </div>
-        <div class="work-tool">
-          <div>Vue.js / Vue CLI / Vue Router / Bootstrap</div>
-          <div class="point"></div>
-          <div class="circle"></div>
-        </div>
-      </div>
-    </div>
 
-    <a href="#contact" class="scroll-tool">
-      <img class="scroll-arrow" src="../assets/scroll-arrow.png" alt="arrow" />
-      <svg height="100" width="100" class="scroll-circle">
-        <circle
-          cx="40"
-          cy="40"
-          r="30"
-          stroke="#FFDF6C"
-          stroke-width="1"
-          fill="none"
+      <a href="#contact" class="scroll-tool">
+        <img
+          class="scroll-arrow"
+          src="../assets/scroll-arrow.png"
+          alt="arrow"
         />
-      </svg>
-      <div class="scroll-click">click</div>
-    </a>
+        <svg height="100" width="100" class="scroll-circle">
+          <circle
+            cx="40"
+            cy="40"
+            r="30"
+            stroke="#FFDF6C"
+            stroke-width="1"
+            fill="none"
+          />
+        </svg>
+        <div class="scroll-click">click</div>
+      </a>
+    </div>
   </div>
 </template>
 
@@ -180,7 +224,7 @@ export default {
   @apply my-auto;
 }
 #work3 .work-item {
-  @apply mt-20 -left-5;
+  @apply mt-20 -left-5 xl:mt-0;
 }
 .work-photo {
   @apply flex flex-row relative;

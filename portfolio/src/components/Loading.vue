@@ -30,7 +30,7 @@ export default {
   name: "Loading",
   data() {
     return {
-      loading: true,
+      loading: false,
     };
   },
   mounted() {
@@ -41,7 +41,7 @@ export default {
 
 <style scope>
 .loading {
-  @apply absolute h-screen w-screen bg-Blackish z-50 flex justify-center items-center flex-col;
+  @apply h-screen absolute w-screen bg-Blackish z-50 flex justify-center items-center flex-col;
 }
 .ball {
   @apply bg-EggYellow;

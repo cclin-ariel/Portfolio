@@ -42,53 +42,59 @@
     </a>
   </div>
   <!--subtitle  skill -->
-  <div id="skill" class="skill mobileBoxWidth">
-    <div class="subtitle">
-      <div class="subtitle-point"></div>
-      <div class="subtitle-text">Expertise & Skill</div>
-    </div>
-    <div class="skill-rings">
-      <div class="skill-ring">
-        <ul class="ring-text">
-          <li>HTML&CSS</li>
-          <li>JavaScript</li>
-          <li>JSON Server</li>
-        </ul>
+  <div id="skill">
+    <div class="skill mobileBoxWidth">
+      <div class="subtitle">
+        <div class="subtitle-point"></div>
+        <div class="subtitle-text">Expertise & Skill</div>
       </div>
-      <div class="skill-ring">
-        <ul class="ring-text">
-          <li>TailwindCSS</li>
-          <li>Bootstrap</li>
-        </ul>
+      <div class="skill-rings">
+        <div class="skill-ring">
+          <ul class="ring-text">
+            <li>HTML&CSS</li>
+            <li>JavaScript</li>
+            <li>JSON Server</li>
+          </ul>
+        </div>
+        <div class="skill-ring">
+          <ul class="ring-text">
+            <li>TailwindCSS</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
+        <div class="skill-ring">
+          <ul class="ring-text">
+            <li>Vue.js</li>
+            <li>Vue Router</li>
+            <li>Vue CLI</li>
+          </ul>
+        </div>
+        <div class="skill-ring">
+          <ul class="ring-text">
+            <li>Figma</li>
+          </ul>
+        </div>
       </div>
-      <div class="skill-ring">
-        <ul class="ring-text">
-          <li>Vue.js</li>
-          <li>Vue Router</li>
-          <li>Vue CLI</li>
-        </ul>
-      </div>
-      <div class="skill-ring">
-        <ul class="ring-text">
-          <li>Figma</li>
-        </ul>
-      </div>
-    </div>
-    <a href="#experience-TW" class="scroll-tool">
-      <img class="scroll-arrow" src="../assets/scroll-arrow.png" alt="arrow" />
-      <svg height="100" width="100" class="scroll-circle">
-        <circle
-          cx="40"
-          cy="40"
-          r="30"
-          stroke="#FFDF6C"
-          stroke-width="1"
-          fill="none"
+      <a href="#experience-TW" class="scroll-tool">
+        <img
+          class="scroll-arrow"
+          src="../assets/scroll-arrow.png"
+          alt="arrow"
         />
-      </svg>
+        <svg height="100" width="100" class="scroll-circle">
+          <circle
+            cx="40"
+            cy="40"
+            r="30"
+            stroke="#FFDF6C"
+            stroke-width="1"
+            fill="none"
+          />
+        </svg>
 
-      <div class="scroll-click">click</div>
-    </a>
+        <div class="scroll-click">click</div>
+      </a>
+    </div>
   </div>
   <!-- subtitle experience TW -->
   <div id="experience-TW" class="experience mobileBoxWidth">
@@ -233,7 +239,13 @@
   </div>
   <div
     id="hobby-language"
-    class="hobby-language mobileBoxWidth flex flex-col justify-between"
+    class="
+      hobby-language
+      mobileBoxWidth
+      flex flex-col
+      justify-between
+      xl:justify-center
+    "
   >
     <!-- subtitle hobby -->
     <div class="hobby">
@@ -268,7 +280,7 @@
       </div>
     </div>
     <!-- subtitle Language -->
-    <div class="language pb-20">
+    <div class="language pb-20 xl:pb-0 xl:pt-32">
       <div class="subtitle pt-0 pt-5">
         <div class="subtitle-point"></div>
         <div class="subtitle-text whitespace-nowrap">Language</div>
@@ -280,7 +292,6 @@
         <p>Taiwanese</p>
       </div>
     </div>
-
     <a href="#work1" class="scroll-tool">
       <img class="scroll-arrow" src="../assets/scroll-arrow.png" alt="arrow" />
       <svg height="100" width="100" class="scroll-circle">
@@ -301,15 +312,29 @@
 <script>
 export default {
   name: "About",
+  data() {
+    return {
+      scrollY: "", //858
+    };
+  },
+  mounted() {
+    this.getScroll();
+  },
+  methods: {
+    getScroll() {
+      this.scrollY = window.scrollY;
+      // console.log(this.scrollY);
+    },
+  },
 };
 </script>
 
 <style scoped>
 .about-PR {
-  @apply h-screen text-Blackish bg-white flex flex-col relative;
+  @apply h-screen text-Blackish bg-white flex flex-col relative xl:justify-center;
 }
 .PR-section {
-  @apply flex flex-col  sm:flex-row;
+  @apply flex flex-col sm:flex-row justify-center;
 }
 .PR-pic {
   @apply max-w-xs w-7/12 sm:w-11/12 mt-10 shadow-lg rounded;
@@ -318,13 +343,13 @@ export default {
   @apply mt-5 text-right sm:self-end;
 }
 .skill {
-  @apply bg-MediumGrey text-white tracking-wider h-screen relative;
+  @apply bg-MediumGrey text-white tracking-wider h-screen relative xl:flex xl:flex-col xl:justify-center;
 }
 .skill-rings {
-  @apply flex flex-wrap mt-10 justify-center;
+  @apply flex flex-wrap mt-10 justify-center h-1/2 items-center;
 }
 .skill-ring {
-  @apply w-36 h-36 rounded-full bg-EggYellow shadow-lg m-2.5 sm:mx-10 flex justify-center items-center;
+  @apply w-36 h-36 md:w-40 md:h-40  rounded-full bg-EggYellow shadow-lg m-2.5 sm:mx-10 md:mx-14 flex justify-center items-center;
 }
 .ring-text {
   @apply h-5/6 flex flex-col items-center justify-evenly text-sm;
@@ -354,13 +379,13 @@ export default {
 }
 #experience-TW,
 #experience-JP {
-  @apply relative;
+  @apply relative xl:flex xl:flex-col xl:justify-center;
 }
 .map {
   @apply absolute w-10/12 sm:flex sm:items-center sm:justify-end opacity-10;
 }
 .map-TW {
-  @apply sm:w-8/12 -mt-12 -ml-5 sm:ml-0 sm:-mt-20;
+  @apply sm:w-8/12  -mt-12 -ml-5 sm:ml-0 sm:-mt-20 md:-mt-32;
 }
 .map-JP {
   @apply sm:w-9/12;

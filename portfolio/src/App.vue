@@ -2,6 +2,7 @@
   <Loading />
   <NavBar />
   <Home />
+  {{ scrollY }}
   <About />
   <Work />
   <Contact />
@@ -28,12 +29,34 @@ export default {
     Contact,
     CopyRight,
   },
+
+  // data() {
+  //   return {
+  //     scrollY: 0,
+  //   };
+  // },
+  // methods: {
+  //   getScroll() {
+  //     this.scrollY = window.scrollY;
+  //   },
+  // },
+  // mounted() {
+  //   window.addEventListener("scroll", this.getScroll);
+  // },
 };
 </script>
 
 <style>
+#home,
+#contact {
+  @apply bg-Blackish;
+}
+#work,
+#skill {
+  @apply bg-MediumGrey;
+}
 .mobileBoxWidth {
-  @apply px-5;
+  @apply px-5 max-w-screen-md mx-auto;
 }
 .article-text {
   @apply text-xs leading-relaxed;
@@ -68,7 +91,7 @@ export default {
   @apply text-DarkGrey;
 }
 .title {
-  @apply text-3xl uppercase relative pt-24;
+  @apply text-3xl uppercase relative pt-24 xl:pt-0;
 }
 
 .title-text {
@@ -78,7 +101,7 @@ export default {
   @apply w-1.5 h-1.5 rounded-full bg-EggYellow absolute right-0 -bottom-1;
 }
 .subtitle {
-  @apply text-xl capitalize pt-32 flex flex-row;
+  @apply text-xl capitalize pt-32 xl:pt-0 flex flex-row;
 }
 .subtitle-text {
   @apply tracking-wider;
