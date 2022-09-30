@@ -1,45 +1,51 @@
 <template>
-  <div id="about" class="about-PR mobileBoxWidth">
-    <!-- page titleÏ -->
-    <div class="title">
-      <div class="title-text">
-        about
-        <div class="title-point"></div>
+  <div id="about" class="about-PR">
+    <div class="mobileBoxWidth">
+      <!-- page titleÏ -->
+      <div class="title">
+        <div class="title-text">
+          about
+          <div class="title-point"></div>
+        </div>
       </div>
-    </div>
-    <div class="PR-section">
-      <!-- PR pic -->
-      <div>
-        <img src="../assets/Lin.jpg" alt="Lin" class="PR-pic" />
-      </div>
-      <!-- PR -->
-      <div class="article-text PR-text">
+      <div class="PR-section">
+        <!-- PR pic -->
         <div>
-          I like working alone, but also like to be a team player. <br />
-          I like to create something from nothing.
+          <img src="../assets/Lin.jpg" alt="Lin" class="PR-pic" />
         </div>
-        <div class="mt-2">
-          チームワークが好きですが、ゼロから独り作業も好きです。<br />
-          ?フロントエンドとデザインをまとめてできるのが強みです。
+        <!-- PR -->
+        <div class="article-text PR-text">
+          <div>
+            I like working alone, but also like to be a team player. <br />
+            I like to create something from nothing.
+          </div>
+          <div class="mt-2">
+            チームワークが好きですが、ゼロから独り作業も好きです。<br />
+            ?フロントエンドとデザインをまとめてできるのが強みです。
+          </div>
         </div>
       </div>
-    </div>
-    <!-- PR scroll -->
-    <a href="#skill" class="scroll-tool">
-      <img class="scroll-arrow" src="../assets/scroll-arrow.png" alt="arrow" />
-      <svg height="100" width="100" class="scroll-circle">
-        <circle
-          cx="40"
-          cy="40"
-          r="30"
-          stroke="#FFDF6C"
-          stroke-width="1"
-          fill="none"
+      <!-- PR scroll -->
+      <a href="#skill" class="scroll-tool">
+        <img
+          class="scroll-arrow"
+          src="../assets/scroll-arrow.png"
+          alt="arrow"
         />
-      </svg>
+        <svg height="100" width="100" class="scroll-circle">
+          <circle
+            cx="40"
+            cy="40"
+            r="30"
+            stroke="#FFDF6C"
+            stroke-width="1"
+            fill="none"
+          />
+        </svg>
 
-      <div class="scroll-click">click</div>
-    </a>
+        <div class="scroll-click">click</div>
+      </a>
+    </div>
   </div>
   <!--subtitle  skill -->
   <div id="skill">

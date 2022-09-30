@@ -39,12 +39,9 @@ export default {
   },
   created() {
     window.addEventListener("scroll", this.handleScroll);
-    // window.addEventListener("scroll", console.log(scrollY);
   },
   methods: {
     handleScroll() {
-      console.log("scrollY", window.scrollY);
-      console.log(window.screen.height);
       let hight = window.screen.height / 2;
       this.thePage =
         window.scrollY < hight

@@ -6,6 +6,9 @@
   .w-full-5px: {
     width: calc(100%-5px);
   }
+  .w-animation: {
+    max-width: 3000px;
+  }
   .bg-gradient {
     background: rgb(255, 223, 108);
     background: linear-gradient(
