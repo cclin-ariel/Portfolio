@@ -31,7 +31,7 @@
           <img src="../assets/github.svg" alt="social media icon" />
         </a>
         <a
-          href="mailto:wahaha47168@gmai1.com"
+          href="mailto:wahaha47168@gmail.com"
           target="_blank"
           class="
             w-6

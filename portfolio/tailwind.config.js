@@ -33,6 +33,9 @@ module.exports = {
   },
   variants: {
     extend: {
+      borderWidth: ['hover', 'focus'],
+      transitionProperty: ['hover', 'focus'],
+      transform: ['hover', 'focus'],
       fontSize: ['hover', 'focus'],
       animation: ['hover', 'focus'],
     }

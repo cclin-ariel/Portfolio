@@ -31,22 +31,34 @@
     </div>
 
     <div class="home mobileBoxWidth">
-      <div class="text-xl">
+      <div
+        data-aos="zoom-in-down"
+        data-aos-delay="3000"
+        data-aos-duration="800"
+        class="text-xl"
+      >
         <div>
-          <!-- <div class="animation translate-x-0" :class="{ transition: action }"> -->
-          Hello! I'm <span class="text-3xl text-EggYellow"> Lin Ya Chi</span>.
+          Hello! I'm <span class="text-3xl text-EggYellow"> Lin, Ya Chi</span>.
         </div>
-        <div class="mt-4">
-          こんにちは!<span class="text-2xl"> リンガキ </span>と申します。
+        <div class="mt-3 tracking-wider capitalize text-EggYellow">
+          A Self-taught frontend developer
+        </div>
+        <div class="mt-8">
+          こんにちは!<span class="text-2xl"> リン </span>です。
         </div>
       </div>
-      <div class="mt-36">
+      <div
+        data-aos="zoom-in-down"
+        data-aos-delay="3000"
+        data-aos-duration="1200"
+        class="mt-36"
+      >
         <div class="article-text">
-          I'm from Taiwan, and I live in Japan now. <br />I've been learning
-          coding by myself for about 2 years.
+          I'm from Taiwan, and based in Japan now. <br />I've taught myself
+          programming for about 2 years.
         </div>
         <div class="mt-4 article-text">
-          台湾出身東京在住、<br />2年前からプログラミング言語を自学始めました。
+          台湾出身東京在住、<br />2年前からプログラミング言語を独学し始めました。
         </div>
       </div>
       <a href="#about" class="scroll-tool">
@@ -77,27 +89,7 @@ export default {
   name: "Home",
 
   data() {
-    return {
-      action: false,
-    };
-  },
-  methods: {
-    triggerAnimation() {
-      let hight = window.screen.height / 2;
-      this.action =
-        window.scrollY < hight
-          ? true
-          : // : window.scrollY < hight * 8.5
-            // ? "isAbout"
-            // : window.scrollY < hight * 13
-            // ? "isWork"
-            // : window.scrollY > hight * 13
-            // ? "isContact"
-            false;
-    },
-  },
-  created() {
-    window.addEventListener("scroll", this.triggerAnimation);
+    return {};
   },
 };
 </script>
@@ -105,8 +97,5 @@ export default {
 <style scoped>
 .home {
   @apply h-screen text-white justify-center text-center  flex flex-col relative;
-}
-.animation {
-  @apply transform translate-x-20 duration-1000 ease-in-out delay-1000;
 }
 </style>

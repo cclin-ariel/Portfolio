@@ -1,6 +1,6 @@
 <template>
   <div class="copyRight">
-    <p>&copy; 2022 Ya Chi Lin</p>
+    <p>&copy; 2022 Lin, Ya Chi</p>
     <div class="animate-bounce w-2 h-2 mx-1">
       <img src="../assets/heart.svg" alt="heart" class="" />
     </div>

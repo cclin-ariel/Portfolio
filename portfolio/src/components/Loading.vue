@@ -30,7 +30,7 @@ export default {
   name: "Loading",
   data() {
     return {
-      loading: false,
+      loading: true,
     };
   },
   mounted() {

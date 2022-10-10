@@ -20,6 +20,12 @@
         <a href="#work1">work</a>
       </button>
       <button
+        :class="{ 'text-EggYellow': thePage == 'isExperience' }"
+        class="navItem"
+      >
+        <a href="#experience-TW">experience</a>
+      </button>
+      <button
         :class="{ 'text-EggYellow': thePage == 'isContact' }"
         class="navItem"
       >
@@ -46,11 +52,13 @@ export default {
       this.thePage =
         window.scrollY < hight
           ? "isHome"
-          : window.scrollY < hight * 8.5
+          : window.scrollY < hight * 3.5
           ? "isAbout"
-          : window.scrollY < hight * 13
+          : window.scrollY < hight * 8
           ? "isWork"
-          : window.scrollY > hight * 13
+          : window.scrollY < hight * 12.5
+          ? "isExperience"
+          : window.scrollY > hight * 12.5
           ? "isContact"
           : "";
     },
@@ -60,7 +68,7 @@ export default {
 
 <style scoped>
 .navBar {
-  @apply px-5 bg-Blackish w-screen top-0 z-40 text-white fixed shadow-md mx-auto;
+  @apply px-2 sm:px-3 md:px-8 bg-Blackish w-screen top-0 z-40 text-white fixed shadow-md mx-auto;
 }
 .navItems {
   @apply flex justify-end items-center h-14;
