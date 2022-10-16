@@ -41,7 +41,7 @@ export default {
 }
 #work,
 #skill {
-  @apply bg-MediumGrey;
+  @apply bg-MediumGrey z-20 relative;
 }
 #hobby {
   @apply bg-EggYellow;

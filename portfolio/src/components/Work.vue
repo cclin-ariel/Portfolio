@@ -56,11 +56,11 @@
             <div class="point"></div>
             <div class="circle"></div>
           </div>
-          <div class="text-xs mt-3 capitalize font-extralight">
-            manage products / coupon, checkout function
+          <div class="text-xs mt-3 capitalize font-extralight flex-wrap">
+            login/logout, manage products / coupon, shopping cart, checkout
           </div>
           <!-- work link -->
-          <div class="flex flex-row items-center justify-end my-3 mr-4">
+          <div class="text-xs flex flex-row items-center justify-end my-3 mr-4">
             <a
               class="link-animation"
               href="https://github.com/cclin-ariel/sims-home"
@@ -70,7 +70,17 @@
                 src="../assets/workGithub.svg"
                 alt="github"
             /></a>
-            <a class="link-animation" href="" target="_blank"
+            <a
+              class="
+                link-animation
+                flex flex-row
+                items-center
+                text-xs
+                tracking-tight
+                font-extralight
+              "
+              href="https://linyachi.s3.ap-northeast-1.amazonaws.com/sims-home/index.html"
+              target="_blank"
               ><img
                 class="w-6 h-6 mx-1"
                 src="../assets/workLink.png"
@@ -157,12 +167,9 @@
                 src="../assets/workGithub.svg"
                 alt="github"
             /></a>
-            <a class="link-animation" href="#" target="_blank"
-              ><img
-                class="w-6 h-6 mx-1"
-                src="../assets/workLink.png"
-                alt="link"
-            /></a>
+            <div class="text-xs pl-1 tracking-tight font-extralight">
+              This project requires JSON server as a backend service.
+            </div>
           </div>
         </div>
       </div>

@@ -117,6 +117,14 @@
                 >Figma</a
               >
             </li>
+            <li>
+              <a
+                href="https://github.com/cclin-ariel"
+                class="underline hover:text-MediumGrey"
+                target="_blank"
+                >Git / GitHub</a
+              >
+            </li>
           </ul>
         </div>
       </div>

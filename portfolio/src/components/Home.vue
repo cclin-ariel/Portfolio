@@ -1,13 +1,9 @@
 <template>
   <div id="home">
     <!-- background video -->
-    <div class="absolute h-screen w-full">
+    <div class="bg-video absolute h-screen w-full z-0">
       <video autoplay muted loop class="h-auto w-full block md:hidden">
-        <source
-          src="../assets/home-bg-sm.mp4"
-          type="video/mp4"
-          class="absolute"
-        />
+        <source src="../assets/home-bg-sm.mp4" type="video/mp4" />
       </video>
       <video
         autoplay
@@ -15,18 +11,10 @@
         loop
         class="h-auto w-full hidden md:block 2xl:hidden"
       >
-        <source
-          src="../assets/home-bg-md.mp4"
-          type="video/mp4"
-          class="absolute"
-        />
+        <source src="../assets/home-bg-md.mp4" type="video/mp4" />
       </video>
-      <video autoplay muted loop class="h-auto w-full hidden 2xl:block">
-        <source
-          src="../assets/home-bg-xl.mp4"
-          type="video/mp4"
-          class="hidden 2xl:black absolute"
-        />
+      <video autoplay muted loop class="h-auto w-full hidden xl:block">
+        <source src="../assets/home-bg-xl.mp4" type="video/mp4" />
       </video>
     </div>
 

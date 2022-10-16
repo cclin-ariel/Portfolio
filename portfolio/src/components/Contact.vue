@@ -7,7 +7,7 @@
           <div class="title-point"></div>
         </div>
       </div>
-      <div class="social-media">
+      <div class="socialMedia">
         <a
           href="https://twitter.com/wahaha47168"
           target="_blank"
@@ -66,7 +66,7 @@ export default {
 .contact .title-text {
   @apply mx-auto w-44;
 }
-.social-media {
+.socialMedia {
   @apply flex flex-row justify-center items-center mx-auto space-x-8 py-10;
 }
 .animation {
