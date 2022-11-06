@@ -79,7 +79,7 @@
                 tracking-tight
                 font-extralight
               "
-              href="https://linyachi.s3.ap-northeast-1.amazonaws.com/sims-home/index.html"
+              href="https://prod.d2cdql7m5ojdor.amplifyapp.com/sims_home"
               target="_blank"
               ><img
                 class="w-6 h-6 mx-1"
